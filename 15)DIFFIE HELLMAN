@@ -5,11 +5,11 @@ XB=int(input("Enter private key of party2(XB): "))
 YA=(alpha**XA)%q
 print ("Public key of party1(YA): ",YA)
 YB=(alpha**XB)%q
-print ("Public key of party2(YB)",YB)
+print ("Public key of party2(YB): ",YB)
 K1=(YB**XA)%q
-print ("Common Secret key calculated by party1(K1: ",K1)
+print ("Common Secret key calculated by party1(K1): ",K1)
 K2=(YA**XB)%q
-print ("Common Secret key calculated by party2(K2) ",K2)
+print ("Common Secret key calculated by party2(K2): ",K2)
 if K1==K2:
    print("Key Exchange Successful")
 else:
